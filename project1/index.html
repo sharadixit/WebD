@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharad fitness</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <style>
+        /* CSS reset */
+        body {
+            font-family: 'Baloo Bhai', cursive;
+            margin: 0px;
+            padding: 0px;
+            background: url('img/gym.png.jpg');
+            color: white;
+        }
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 22px;
+            top: 20px;
+            display: flex;
+        }
+        .left img {
+            width: 50px;
+            margin-top: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
+            filter: invert(100%);
+        }
+        .mid {
+            /* border: 2px solid green; */
+            display: block;
+            width: 56%;
+            margin: 12px auto;
+            font-size: 10px;
+        }
+        .right {
+            /* border: 2px solid yellow; */
+            display: inline-block;
+            position: absolute;
+            right: 22px;
+            top: 20px;
+        }
+        .navbar {
+            display: inline-block;
+        }
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+        }
+        .navbar li a {
+            direction: none;
+            color: white;
+            padding: 34px 23px;
+        }
+        .navbar li a:hover , .navbar li a:active {
+            text-decoration: underline;
+            color: gray;
+        }
+        #stock {
+            /* border: 2px solid yellow; */
+            margin: 3px auto;
+            margin-left: 23px;
+        }
+    .btn {
+            font-family: 'Baloo Bhai', cursive;
+            margin: 0px 4px;
+            background-color: black;
+            color: white;
+            padding: 4px 10px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;  
+        }
+        .container {
+            /* border: 2px solid wheat;  */
+            margin-top: 70px;
+            width: 650px;
+
+        }
+ #btn{
+    margin: 11px auto;
+    padding: 1px;
+    width: 520px;
+    display: block;
+ }
+ #bt{
+    margin: 11px auto;
+    padding: 1px;
+    width: 520px;
+    display: block; 
+ }
+        .container h1 {
+            font-size: 230%;
+            text-decoration: underline;
+        text-align: center;
+        }
+        .formgroup {
+            padding: 4px 13px;
+        }
+        .formgroup input {
+            font-family: 'Baloo Bhai', cursive;
+            text-align: center;
+            display: block;
+            width: 508px;
+            padding: 1px;
+            border: 2px solid black;
+            margin: 11px auto;
+            font-size: 25px;
+            border-radius: 8px;
+        }
+        .btn:hover {
+        background-color: rgb(31, 30, 30);
+    }
+    .you{
+        width: 500px;
+        /* border: 2px solid gray; */
+        font-size: 80px;
+        display: block;
+        margin: auto;
+    }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- left box for logo -->
+            <img src="img/sharad.png" alt="">
+            <div id="stock">iStock</div>
+        </div>
+        <div class="mid">
+            <!-- mid box for navigation -->
+            <ul class="navbar">
+                <li> <a href="#" class="active">Home</a></li>
+                <li> <a href="https://google.com">About us</a></li>
+                <li> <a href="https://facebook.com">Fittness calculator</a></li>
+                <li> <a href="https://instagra.com">Contat us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <!-- right box for searchinf -->
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best GYM in Delhi</h1>
+        <form action="typhoon.php">
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Gander">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Email">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Blood Group">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Timing">
+            </div>
+            <button class="btn" id="btn">Submit</button>
+            <button id="bt" class="btn" >Clear</button>
+
+        </form>
+    </div>
+    <h1 id="thank" class="you">Thank You :)</h1>
+</body>
+</html>
